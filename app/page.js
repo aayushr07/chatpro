@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { MessageCircle, Video, Users, Shield, Zap, Globe } from 'lucide-react'
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   const { data: session } = useSession()
   const isLoggedIn = !!session
@@ -161,4 +161,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
